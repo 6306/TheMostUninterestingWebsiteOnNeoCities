@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<script src="https://cdn.jsdelivr.net/combine/npm/tone@14.7.58,npm/@magenta/music@1.23.1/es6/core.js,npm/focus-visible@5,npm/html-midi-player@1.4.0"></script>
+<link rel="stylesheet" href="7.css">
+<style>
+body {
+  background-image: url('images/space.gif');
+  background-repeat: repeat;
+  color: blue;
+}
+</style>
+<script>     
+          var xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+          var site_data = JSON.parse(this.responseText);
+          var num_arr = site_data.info.views.toString().split("");
+          var num_str = "";
+          for (i = 0; i < num_arr.length; i++) {
+          num_str += num_arr[i];
+          if ( (num_arr.length-1 - i) % 3 == 0 && (num_arr.length-1 - i) != 0 ) {num_str += ",";}
+          var date_str = site_data.info.last_updated;
+          var date_obj = new Date(site_data.info.last_updated);
+          document.getElementById("lastupdate").innerHTML = (date_obj.getMonth()+1) + "-" + date_obj.getDate() + "-" + date_obj.getFullYear();
+          }
+          document.getElementById("hitcount").innerHTML = num_str;
+          }
+          };
+          xhttp.open("GET", "https://weirdscifi.ratiosemper.com/neocities.php?sitename=themostunintrestingwebsiteon", true);
+          xhttp.send();
+</script>
+<html>
+<title>The Most Unintresting Website On NeoCities</title>
+  <body>
+
+        <ul role="menubar" class="can-hover">
+  <li role="menuitem" tabindex="0" aria-haspopup="true">
+    Navigation
+    <ul role="menu">
+      <li role="menuitem"><a href="index.html">Home</a></li>
+      <li role="menuitem"><a href="stories.html">Stories</a></li>
+      <li role="menuitem" class="has-divider"><a href="web.html">Webies</a></li>
+      <li role="menuitem"><a href="archive.html">Archive</a></li>
+    </ul>
+  </li>
+  <li role="menuitem" tabindex="1" aria-haspopup="true">
+    Artwork
+    <ul role="menu">
+      <li role="menuitem"><a href="oa.html">Original Artwork</a></li>
+      <li role="menuitem"><a href="fa.html">Fan Art</a></li>
+      <li role="menuitem"><a href="ga.html">Game Art</a></li>
+    </ul>
+  </li>
+</ul>
+
+            <div id="flex">
+            <center>
+            <img src="images/dog.png" height="100">
+                <main>
+                    <h2>The Most Unintresting Website On NeoCities</h2>
+                    <p>Look at this, <strong>strong text!</strong></p>
+                    <p>Welp, you're here, at The Most Unintresting Website On Neocities (and probably on the internet)</p>
+                    <p>You can find unintresting things on this website like a web archive of this website.</p>
+
+                    <img src="images/neko.gif" height="50">
+
+                    <p>I go by fool on the internet and taken it as my nickname.</p>
+                    <p>My motto: I am truly an example of a fool.</p>
+
+                </main>
+                
+            <aside id="leftSidebar"><h2>Updates</h2>
+            <div class="box">
+                <p>WOW!</p>
+                <ul style="padding-left:10px;">
+                    <li>I don't know</li>
+                </ul>
+                <midi-player
+                src="musicbox.mid">
+                </midi-player>
+            </div>
+            </center>
+            
+            <div class="window" style="max-width: 320px">
+  <div class="title-bar">
+    <div class="title-bar-text">Microwave Server Announcement</div>
+  </div>
+  <div class="window-body">
+  <center>
+    <p>Hi there!</p>
+    <p>Does a microwave count as a server?</p>
+  <div class="status-bar">
+    <p class="status-bar-field"><span id="lastupdate"></span></p>
+    <p class="status-bar-field"><span id="hitcount"></span> people visited this site.</p>
+  </div>
+</div>
+</div>
+</div>
+</center>
+            <center>
+            <footer id="footer">(C) The Most Unintresting Website on Neocities, 2022</footer>
+            </center>
+</div>   
+</div>
+</body>
+</html>
