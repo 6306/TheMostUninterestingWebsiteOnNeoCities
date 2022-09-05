@@ -8,3 +8,5 @@
 <p>Setting up is easy!</p>
 <p>Drag the files onto your web server and your done!</p>
 <p>No files to configure for it to work.</p>
+<br>
+<p>Leaving midi.mid here just in case.</p>
