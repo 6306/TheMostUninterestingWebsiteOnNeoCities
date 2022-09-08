@@ -4,6 +4,7 @@
 <p>Make sure to check the LICENSE file in the source code and</p>
 <p>also at themostunintrestingwebsiteon.neocities.org/LICENSE.txt</p>
 <br>
+<p>Fork this for your own use</p>
 <br>
 <p>Setting up is easy!</p>
 <p>Drag the files onto your web server and your done!</p>
