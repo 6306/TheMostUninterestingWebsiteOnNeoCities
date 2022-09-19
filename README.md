@@ -1,5 +1,8 @@
 <h2>The Most Unintresting Website on NeoCities</h2>
 <p>Now it's open sourced so you can spread it to the whole world</p>
+<img src="https://raw.githubusercontent.com/6306/TheMostUnintrestingWebsiteOnNeoCities/main/septemberlayout.jpg" height="250">
+<br>
+<br>
 <br>
 <p>Make sure to check the LICENSE file in the source code and</p>
 <p>also at themostunintrestingwebsiteon.neocities.org/LICENSE.txt</p>
