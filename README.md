@@ -1,4 +1,4 @@
-<h2>The Most Unintresting Website on NeoCities</h2>
+<h2>The Most Uninteresting Website on NeoCities</h2>
 <p>Now it's open sourced so you can spread it to the whole world</p>
 <img src="https://raw.githubusercontent.com/6306/TheMostUnintrestingWebsiteOnNeoCities/main/septemberlayout.jpg" height="250">
 <br>
